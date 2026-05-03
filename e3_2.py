@@ -71,3 +71,16 @@ a3 = scaling_factor(x, y3)
 print("Scaling y1:", a1)
 print("Scaling y2:", a2)
 print("Scaling y3:", a3)
+
+"""
+shift:
+A large correlation peak
+NOT centered at zero lag
+shift = peak_index - (len(x) - 1)
+scaled:
+Has a large correlation peak
+Scaling factor ≠ 1
+a ≈ 1 no scaling
+a > 1 amplification
+a < 1 attenuation
+"""
