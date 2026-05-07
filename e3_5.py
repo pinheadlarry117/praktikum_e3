@@ -55,3 +55,12 @@ def compare_specs(x, fs, params_default, **kwargs):
     plt.ylim(0, 4000)
     plt.colorbar()
     plt.show()
+
+    #FFT length ↑ -> Frequency resolution ↑, time resolution ↓
+    #Window length ↓ -> Time resolution ↑
+    #Overlap ↑ -> Smoother plot
+    #Hann window -> Good leakage suppression
+    # Spectrogram quality strongly depends on FFT size, window length and overlap
+    #Speech vowels exhibit strong harmonic and formant structures
+    #Consonants are noisy and broadband
+    #Hann window offers best balance between leakage and resolution
